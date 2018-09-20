@@ -2,7 +2,7 @@
 
 ### By Justin McLaren @chinapalace
 
-##To-DO
+#### To-DO
 
 1. Hero Image resizes on mobile browsers when scrolling. Causes some weird jumpiness.
 2. 2px blue background showing behind one of the images in the photo grid.
