@@ -1,0 +1,54 @@
+@font-face {
+  font-family: MaisonNeue-Medium;
+  src: url(../assets/fonts/MaisonNeue-Medium.ttf);
+}
+@font-face {
+  font-family: MaisonNeue-Bold;
+  src: url(../assets/fonts/MaisonNeue-Bold.ttf);
+}
+@font-face {
+  font-family: MaisonNeue-Book;
+  src: url(../assets/fonts/MaisonNeue-Book.ttf);
+}
+@font-face {
+  font-family: MaisonNeue-Light;
+  src: url(../assets/fonts/MaisonNeue-Light.ttf);
+}
+:root {
+  --blue: #00263e;
+  --darkGrey: #545454;
+  --lightGrey: #9b9b9b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
+  // @media only screen and (max-width: 550px) {
+  //   font-size: 37.5%;
+  // }
+}
+
+body {
+  font-family: "MaisonNeue-Bold", sans-serif;
+  color: var(--blue);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  // min-width: 51rem;
+}

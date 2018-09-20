@@ -1,0 +1,471 @@
+@font-face {
+  font-family: MaisonNeue-Medium;
+  src: url(../assets/fonts/MaisonNeue-Medium.ttf); }
+
+@font-face {
+  font-family: MaisonNeue-Bold;
+  src: url(../assets/fonts/MaisonNeue-Bold.ttf); }
+
+@font-face {
+  font-family: MaisonNeue-Book;
+  src: url(../assets/fonts/MaisonNeue-Book.ttf); }
+
+@font-face {
+  font-family: MaisonNeue-Light;
+  src: url(../assets/fonts/MaisonNeue-Light.ttf); }
+
+:root {
+  --blue: #00263e;
+  --darkGrey: #545454;
+  --lightGrey: #9b9b9b; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "MaisonNeue-Bold", sans-serif;
+  color: var(--blue);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto; }
+
+.flex-col {
+  flex: 0 0 50%;
+  display: flex; }
+  @media only screen and (max-width: 960px) {
+    .flex-col {
+      flex: auto; }
+      .flex-col .first {
+        order: 1; }
+      .flex-col .second {
+        order: 2; } }
+
+@media only screen and (max-width: 960px) {
+  .flex-col.first {
+    order: 1; }
+  .flex-col.second {
+    order: 2; }
+  .three-up {
+    flex-grow: 5; }
+  .two-up {
+    flex-grow: 4; } }
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: normal;
+  flex: 1 1 auto; }
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+section {
+  min-height: 100vh; }
+  @media only screen and (max-width: 1360px) {
+    section {
+      min-height: auto; } }
+
+.header {
+  opacity: 1;
+  font-family: MaisonNeue-Bold;
+  font-size: 1.8rem;
+  color: #00263e;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  height: 12.8rem; }
+
+.hero {
+  background-image: url(../assets/img/HERO.png);
+  background-size: cover;
+  flex-direction: column;
+  flex: auto;
+  min-height: calc(100vh - 12.8rem); }
+
+.subHead {
+  opacity: 1;
+  font-family: MaisonNeue-Bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase; }
+
+.headline {
+  opacity: 1;
+  font-family: MaisonNeue-Book;
+  font-size: 7.2rem;
+  color: #ffffff;
+  letter-spacing: 0; }
+
+.responsive-image {
+  max-width: 100%;
+  min-width: 100%;
+  display: block; }
+
+.section-1 {
+  background-color: var(--blue); }
+
+.body-copy {
+  font-family: MaisonNeue-Medium;
+  font-size: 2.2rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 3.6rem; }
+
+.quote-panel {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem;
+  justify-content: space-around; }
+  @media only screen and (max-width: 1140px) {
+    .quote-panel {
+      margin: 7rem; } }
+  @media only screen and (max-width: 1030px) {
+    .quote-panel {
+      margin: 5rem;
+      justify-content: space-evenly; } }
+  @media only screen and (max-width: 500px) {
+    .quote-panel {
+      margin: 2rem; } }
+
+.small-text {
+  font-family: MaisonNeue-Medium;
+  font-size: 2.2rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 3rem; }
+
+.role {
+  font-family: MaisonNeue-Light;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 2.2rem; }
+
+.quote-attribution {
+  display: flex;
+  align-items: flex-end; }
+
+.quote-attribution .text {
+  flex-direction: column;
+  display: flex;
+  height: 15rem;
+  justify-content: space-between; }
+
+.cell {
+  max-width: 100%;
+  max-height: 100%; }
+
+.avatar {
+  padding-right: 5rem; }
+
+.section-2 {
+  background: #f0f6fe;
+  display: flex;
+  flex-direction: column; }
+
+.section2-headline {
+  font-family: MaisonNeue-Medium;
+  font-size: 4.8rem;
+  color: #00263e;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 4.8rem;
+  padding: 19rem 0 4rem 0; }
+
+.section2-text {
+  font-family: MaisonNeue-Book;
+  font-size: 2.2rem;
+  color: #555555;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 3rem;
+  margin: 0 22.5rem;
+  padding-bottom: 10rem; }
+  @media only screen and (max-width: 900px) {
+    .section2-text {
+      margin: 0 10.5rem; } }
+  @media only screen and (max-width: 600px) {
+    .section2-text {
+      margin: 0 0.5rem; } }
+
+.segment {
+  background: #ffffff;
+  box-shadow: 0 0 1.8rem 0 rgba(0, 0, 0, 0.08);
+  margin: 0 22.5rem; }
+  @media only screen and (max-width: 1100px) {
+    .segment {
+      margin: 0 10.5rem; } }
+  @media only screen and (max-width: 550px) {
+    .segment {
+      margin: 0 1rem; } }
+
+.chart {
+  padding: 8rem; }
+  @media only screen and (max-width: 1400px) {
+    .chart {
+      padding: 6rem; } }
+  @media only screen and (max-width: 1300px) {
+    .chart {
+      padding: 4rem; } }
+
+@media only screen and (max-width: 1150px) {
+  .chart-row .flex-col {
+    flex: auto; } }
+
+@media only screen and (max-width: 710px) {
+  .flex-row.chart-row {
+    flex: 0; } }
+
+@media only screen and (max-width: 710px) {
+  .flex-col.graph-info {
+    align-items: center;
+    margin: 2rem 0; } }
+
+.graph-info {
+  flex-direction: column;
+  margin: 8rem 0;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 1210px) {
+    .graph-info {
+      font-size: 50%;
+      margin: 4rem 0; } }
+
+.graph-title {
+  font-family: MaisonNeue-Book;
+  font-size: 3.6rem;
+  color: #00263e;
+  letter-spacing: 0;
+  line-height: 4.8rem;
+  padding: 0 0 0.8rem; }
+
+.graph-subtitle {
+  font-family: MaisonNeue-Light;
+  font-size: 2.2rem;
+  color: #545454;
+  letter-spacing: 0;
+  line-height: 2.2rem; }
+
+.statistic {
+  font-family: MaisonNeue-Light;
+  font-size: 1.6rem;
+  color: #545454;
+  letter-spacing: 0;
+  line-height: 2.2rem;
+  display: flex;
+  align-items: flex-end; }
+
+.space {
+  height: 20rem; }
+
+.section-3 {
+  background: #ffffff; }
+
+.section-3-headline {
+  padding: 15rem 0 4rem 0;
+  font-family: MaisonNeue-Medium;
+  font-size: 4.8rem;
+  color: #00263e;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 6rem; }
+
+.tabs {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10rem; }
+
+.tabs li {
+  opacity: 1;
+  font-family: MaisonNeue-Bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  list-style: none;
+  text-decoration: none; }
+
+.tabs li a {
+  text-decoration: none;
+  padding: 0.5rem 0;
+  text-transform: uppercase; }
+
+.tabs li .active {
+  color: #000000;
+  border-bottom: 0.3rem solid #1dcad3; }
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 28rem; }
+
+.centered > li {
+  padding: 2.5rem; }
+
+.tabmenu {
+  color: #9b9b9b; }
+
+.tab-items {
+  justify-content: space-evenly; }
+
+.item-title {
+  font-family: MaisonNeue-Book;
+  font-size: 2.2rem;
+  color: #00263e;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 3rem;
+  padding: 0 0 1.4rem; }
+
+.item-description {
+  font-family: MaisonNeue-Light;
+  font-size: 1.6rem;
+  color: #545454;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 2.2rem;
+  padding: 0 0 6.2rem; }
+
+.item-img img {
+  height: 12rem;
+  width: 12rem; }
+
+.item-img {
+  padding: 0 0 3rem; }
+
+.vl {
+  transform: translateY(-7.4rem); }
+
+.vl > span {
+  border-left: 0.5px solid #b2c5cc;
+  border-right: 0.5px solid #b2c5cc;
+  height: 14.8rem; }
+
+.quote-segment {
+  padding: 9.3rem 0;
+  background: #f0f6fe;
+  flex-direction: column;
+  flex-basis: 40rem;
+  margin: 0 12rem;
+  width: auto;
+  transform: translateY(19.35rem); }
+  @media only screen and (max-width: 600px) {
+    .quote-segment {
+      margin: 0; } }
+
+.quote-body {
+  font-family: MaisonNeue-Book;
+  font-size: 2.2rem;
+  color: #00263e;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 3.6rem;
+  max-width: 58.8rem;
+  padding: 2rem 0 2.5rem 0; }
+
+.quote-attr {
+  font-family: MaisonNeue-Book;
+  font-size: 1.8rem;
+  color: #00263e;
+  letter-spacing: 0;
+  text-align: center; }
+
+.section-4 {
+  margin-top: -9.675rem; }
+
+.dot {
+  margin: 2rem 1.2rem 0 0;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%; }
+
+.dot.green {
+  background: #25cad2; }
+
+.dot.grey {
+  background: #607485; }
+
+.section4-img {
+  background-image: url(../assets/img/fullphoto.png);
+  background-size: cover;
+  height: 77rem; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 14.2rem 0.5rem 17.2rem 0.5rem; }
+
+.footer-body {
+  flex-direction: column;
+  display: flex; }
+
+.footer-header {
+  font-family: MaisonNeue-Medium;
+  font-size: 4.8rem;
+  color: #00263e;
+  letter-spacing: 0;
+  line-height: 6rem;
+  padding: 2.4rem 0; }
+
+.footer-body-copy {
+  opacity: 1;
+  font-family: MaisonNeue-Light;
+  font-size: 2.2rem;
+  color: #545454;
+  letter-spacing: 0;
+  line-height: 3rem;
+  max-width: 58.9rem;
+  padding-bottom: 4rem; }
+
+@media only screen and (max-width: 500px) {
+  #illustration {
+    width: 42rem;
+    height: 27rem; } }
+
+.footer-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MaisonNeue-Bold;
+  font-size: 1.3rem;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  background-color: #eb0045;
+  width: 20rem;
+  height: 4.8rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.4rem; }
+
+.footer-col {
+  display: flex; }
+
+.footer-img {
+  padding-right: 8.6rem; }
+  @media only screen and (max-width: 600px) {
+    .footer-img {
+      padding-right: 0; } }
