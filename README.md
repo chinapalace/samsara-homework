@@ -1,6 +1,6 @@
 # "Homework" Assignment for Samsara Marketing Department
 
-### By Justin McLaren @chinapalace
+### By Justin McLaren [justinmclaren.com](https://justinmclaren.com)
 
 #### To-DO
 
