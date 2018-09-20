@@ -103,6 +103,9 @@ section {
   flex-direction: column;
   flex: auto;
   min-height: calc(100vh - 12.8rem); }
+  @media only screen and (max-width: 600px) {
+    .hero {
+      min-height: inherit; } }
 
 .subHead {
   opacity: 1;
@@ -123,7 +126,7 @@ section {
       font-size: 5.2rem; } }
   @media only screen and (max-width: 380px) {
     .headline {
-      font-size: 5rem; } }
+      font-size: 4.2rem; } }
 
 .responsive-image {
   max-width: 100%;
@@ -239,6 +242,9 @@ section {
   @media only screen and (max-width: 1300px) {
     .chart {
       padding: 4rem; } }
+  @media only screen and (max-width: 680px) {
+    .chart {
+      padding: 2rem; } }
 
 @media only screen and (max-width: 1150px) {
   .chart-row .flex-col {
