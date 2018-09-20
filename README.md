@@ -4,6 +4,7 @@
 
 #### To-DO
 
-1. Hero Image -- resizes on mobile browsers when scrolling. Causes some weird jumpiness.
-2. Photo Grid -- 2px blue background showing behind bottom-left image.
-3. Dark Blue Quote Section -- text should reformat better on mobile.
+1. Internet Explorer -- not yet tested in IE, probably some slight bugs with Flexbox and CSS variables. 
+2. Hero Image -- resizes on mobile browsers when scrolling. Causes some weird jumpiness.
+3. Photo Grid -- 2px blue background showing behind bottom-left image.
+4. Dark Blue Quote Section -- text should reformat better on mobile.
