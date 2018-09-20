@@ -13,6 +13,9 @@
   flex-direction: column;
   flex: auto;
   min-height: calc(100vh - 12.8rem);
+  @media only screen and (max-width: 600px) {
+    min-height: auto;
+  }
 }
 .subHead {
   opacity: 1;
@@ -32,7 +35,7 @@
     font-size: 5.2rem;
   }
   @media only screen and (max-width: 380px) {
-    font-size: 5rem;
+    font-size: 4.8rem;
   }
 }
 section {
